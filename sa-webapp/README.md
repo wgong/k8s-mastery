@@ -9,7 +9,7 @@
 
 ## Running the container
 ``` 
-$ docker run -d -p 8080:8080 -e SA_LOGIC_API_URL='http://<container_ip or docker machine ip>:5000' $DOCKER_USER_ID/sentiment-analysis-web-app  
+$ docker run -d -p 8002:8080 -e SA_LOGIC_API_URL='http://<container_ip or docker machine ip>:5000' $DOCKER_USER_ID/sentiment-analysis-web-app  
 ```
 
 #### Native docker support needs the Container IP

@@ -4,6 +4,10 @@ from flask import Flask, request, jsonify
 app = Flask(__name__)
 
 
+@app.route("/", methods=['GET'])
+def hello():
+    return "Welcome to Flask"
+
 @app.route("/analyse/sentiment", methods=['POST'])
 def analyse_sentiment():
     sentence = request.get_json()['sentence']
